@@ -1,0 +1,55 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<body>
+@{
+    var admin="admin";
+    var child="child";
+}
+
+<div align="left">
+     Admin Login : <a href="/Home/LoginAdmin?role=@admin"><button type="submit" class="btn btn-primary btn-rounded" name="btn" id="btn" >LOGIN</button></a>
+</div><emsp/>
+
+<div align="right">
+     Child Login : <a href="/Home/LoginChild?role1=@child"><button type="submit" class="btn btn-primary btn-rounded" name="btn1" id="btn1">LOGIN</button></a>
+</div>
+
+ 
+
+     <video autoplay loop muted plays-inline class="back-video">    @*background Video*@
+        <source src="/Images/video.mp4" type="video/mp4"/>
+     </video>
+
+
+    <div class="text-center" style="color: whitesmoke;"> @*color of welcome page*@
+    <h1 class="display-4">Welcome<br/>To</h1>
+    <p><i><u><h4>UMMEED<br/>
+
+    </h4></u></i></p>
+</div>
+    <table><tr><th>
+    <a class="btn btn-info btn-rounded" href="/home/Registration"><pre>
+        Info About Registration
+        how to get Register
+  
+    </pre></a>
+        </th><tr></table>&nbsp;&nbsp;
+        <table><tr><th>
+    <a class="btn btn-warning btn-rounded" href="/home/Registration"><pre>
+        Info About Registration
+        how to get Register as
+        Be My Friend.....
+  
+    </pre></a>
+        </th><tr></table>&nbsp;&nbsp;
+        <table><tr><th>
+    <a class="btn btn-success btn-rounded" href="/home/Donation"><pre>
+        Info About Donation
+        Donate for Children
+        future to be great..
+  
+    </pre></a>
+        </th><tr></table><br><br>
+
+</body>
